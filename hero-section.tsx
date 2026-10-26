@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from './ImageWithFallback';
 
 export function HeroSection() {
   return (
