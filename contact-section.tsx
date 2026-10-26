@@ -60,7 +60,7 @@ export function ContactSection() {
               </div>
               <button type="submit" className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2">
                 <Send className="w-5 h-5" aria-hidden="true" />
-                Check Form Status
+                ফর্মের সীমাবদ্ধতা দেখুন
               </button>
             </form>
           </div>
