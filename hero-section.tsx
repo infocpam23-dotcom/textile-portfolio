@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from './ImageWithFallback';
 
 export function HeroSection() {
   return (
@@ -7,7 +7,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
           src="https://images.unsplash.com/photo-1701964620963-4dcaab6d020f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZXh0aWxlJTIwZmFicmljJTIwcGF0dGVybnxlbnwxfHx8fDE3NjgyMDIyODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          alt="Textile Background"
+          alt="Decorative textile pattern used as a temporary portfolio background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
@@ -22,7 +22,7 @@ export function HeroSection() {
           Textile Designer
         </p>
         <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-12">
-          Creating innovative and sustainable textile designs that blend traditional craftsmanship with contemporary aesthetics
+          Exploring textile patterns, color, and surface design across traditional and contemporary styles
         </p>
         <button
           onClick={() => {

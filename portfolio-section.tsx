@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from './ImageWithFallback';
 
 type Category = 'all' | 'traditional' | 'modern' | 'prints' | 'embroidery';
 
@@ -17,63 +17,63 @@ const portfolioItems: PortfolioItem[] = [
     title: 'Traditional Handwoven Textile',
     category: 'traditional',
     imageUrl: 'https://images.unsplash.com/photo-1760328715296-9714daa8a737?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGZhYnJpYyUyMHdlYXZpbmd8ZW58MXx8fHwxNzY4MTk1ODYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Traditional weaving technique with indigenous patterns'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 2,
     title: 'Vibrant Color Palette',
     category: 'modern',
     imageUrl: 'https://images.unsplash.com/photo-1731275668160-f18f97c6faac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHRleHRpbGUlMjBwYXR0ZXJufGVufDF8fHx8MTc2ODI4OTI1NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Contemporary color combinations for modern fashion'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 3,
     title: 'Batik Inspired Design',
     category: 'traditional',
     imageUrl: 'https://images.unsplash.com/photo-1761516659497-8478e39d2b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXRpayUyMGZhYnJpYyUyMGRlc2lnbnxlbnwxfHx8fDE3NjgyODkyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Traditional batik technique with modern twist'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 4,
     title: 'Modern Abstract Print',
     category: 'prints',
     imageUrl: 'https://images.unsplash.com/photo-1763581366713-80bc40b50f7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZXh0aWxlJTIwcHJpbnR8ZW58MXx8fHwxNzY4Mjg5MjU1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Digital textile print with abstract motifs'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 5,
     title: 'Intricate Embroidery',
     category: 'embroidery',
     imageUrl: 'https://images.unsplash.com/photo-1712255830188-9c4e38b2600d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbWJyb2lkZXJ5JTIwdGV4dGlsZSUyMGFydHxlbnwxfHx8fDE3NjgyODkyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Hand-embroidered textile art with traditional motifs'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 6,
     title: 'Geometric Patterns',
     category: 'modern',
     imageUrl: 'https://images.unsplash.com/photo-1759267134622-811ea9198bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBmYWJyaWMlMjBwYXR0ZXJufGVufDF8fHx8MTc2ODI4OTI1NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Modern geometric design for contemporary apparel'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 7,
     title: 'Luxury Silk Texture',
     category: 'modern',
     imageUrl: 'https://images.unsplash.com/photo-1612744204774-5d0573587ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaWxrJTIwZmFicmljJTIwdGV4dHVyZXxlbnwxfHx8fDE3NjgyODkyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Premium silk fabric with elegant texture'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 8,
     title: 'Organic Cotton Weave',
     category: 'traditional',
     imageUrl: 'https://images.unsplash.com/photo-1598616068517-c75ad397a436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3R0b24lMjB0ZXh0aWxlJTIwd2VhdmV8ZW58MXx8fHwxNzY4MTg3NDM0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Sustainable organic cotton with traditional weave'
+    description: 'Reference image only — replace with your original design'
   },
   {
     id: 9,
     title: 'Floral Textile Art',
     category: 'prints',
     imageUrl: 'https://images.unsplash.com/photo-1712255830050-a7ab819c196b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmbG9yYWwlMjB0ZXh0aWxlJTIwZGVzaWdufGVufDF8fHx8MTc2ODI4OTI2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Botanical print design inspired by nature'
+    description: 'Reference image only — replace with your original design'
   }
 ];
 
@@ -98,7 +98,7 @@ export function PortfolioSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl mb-4">Portfolio</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            আমার সৃজনশীল কাজের নমুনা যা ঐতিহ্য এবং আধুনিকতার সংমিশ্রণ
+            নিচের ছবিগুলো বর্তমানে রেফারেন্স/প্লেসহোল্ডার। এগুলোর বদলে নিজের আসল টেক্সটাইল ডিজাইন যোগ করুন।
           </p>
         </div>
 

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { HeroSection } from '@/app/components/hero-section';
-import { AboutSection } from '@/app/components/about-section';
-import { PortfolioSection } from '@/app/components/portfolio-section';
-import { ContactSection } from '@/app/components/contact-section';
-import { Footer } from '@/app/components/footer';
+import { HeroSection } from './hero-section';
+import { AboutSection } from './about-section';
+import { PortfolioSection } from './portfolio-section';
+import { ContactSection } from './contact-section';
+import { Footer } from './footer';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
