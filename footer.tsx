@@ -59,21 +59,21 @@ export function Footer() {
             <h4 className="text-primary-foreground mb-4">Follow Me</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5 text-primary-foreground" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-primary-foreground" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="LinkedIn"
               >
