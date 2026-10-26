@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from './ImageWithFallback';
 
 type Category = 'all' | 'traditional' | 'modern' | 'prints' | 'embroidery';
 
